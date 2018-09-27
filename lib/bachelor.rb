@@ -48,5 +48,9 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
-  
+  array = []
+  data.each do |season_number, season_data|
+    array << season_data.values[2]
+    binding.pry
+  end 
 end
