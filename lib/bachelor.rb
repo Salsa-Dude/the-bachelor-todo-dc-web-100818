@@ -63,5 +63,5 @@ def get_average_age_for_season(data, season)
   array.each do |i|
     array_sum = array_sum + i
   end 
-  return array_sum / array.length
+  return (array_sum / array.length).ceil
 end
