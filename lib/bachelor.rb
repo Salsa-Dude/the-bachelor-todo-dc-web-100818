@@ -56,12 +56,11 @@ def get_average_age_for_season(data, season)
       end 
     end 
   end 
-  array.collect do |i|
+  array.collect! do |i|
     i.to_i
-      binding.pry
   end
   array_sum = 0
-
+      binding.pry
   array.each do |i|
     array_sum = array_sum + i
   end 
